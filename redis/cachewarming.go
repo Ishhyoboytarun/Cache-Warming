@@ -44,3 +44,15 @@ func main() {
 		fmt.Println("Key:", key, "Value:", result)
 	}
 }
+
+/*
+
+In this example, we create a Redis client using the "github.com/go-redis/redis" package and connect 
+to a Redis instance running on the local machine. We then define a map of key-value pairs to be cached 
+and use a for loop to preload Redis with the data. Finally, we retrieve the data from Redis using 
+the Get() method and print the results.
+
+Note that this is a simple example and may not be suitable for large datasets. In production, you 
+may need to optimize the code and use Redis pipelining or other techniques to improve performance.
+
+*/
